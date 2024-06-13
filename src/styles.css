@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333333;
+}
+
+.select-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.select-container select {
+  width: 200px; /* Adjust width as needed */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  appearance: none; /* Remove default arrow */
+  background-color: #ffffff;
+  background-image: linear-gradient(45deg, transparent 50%, #ccc 50%),
+    linear-gradient(135deg, #ccc 50%, transparent 50%);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px);
+  background-size:
+    5px 5px,
+    5px 5px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.select-container select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.cat-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cat-card {
+  width: 250px;
+  margin: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.cat-card:hover {
+  transform: translateY(-5px);
+}
+
+.cat-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.cat-card img:hover {
+  transform: scale(1.05);
+}
+
+.cat-card .info-button,
+.cat-card .download-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.cat-card .info-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.cat-card .info-button:hover {
+  background-color: #0056b3;
+}
+
+.cat-card .download-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.cat-card .download-button:hover {
+  background-color: #45a049;
+}
